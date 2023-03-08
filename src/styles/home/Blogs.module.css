@@ -1,0 +1,125 @@
+.blogswrapper {
+	margin: 75px 0;
+}
+.blogslist {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	margin: 0 25px;
+	/* overflow-x: scroll; */
+	margin-top: 40px;
+	flex-wrap: unset;
+	white-space: nowrap;
+}
+
+@media screen and (max-width: 1399px) {
+	.blogslist {
+		overflow-x: scroll;
+	}
+}
+.blog {
+	flex: 0 0 auto;
+	width: 400px;
+	margin-right: 20px;
+	overflow: hidden;
+	background: var(--purple-color);
+	border-radius: 5px;
+	white-space: break-spaces;
+	padding-bottom: 25px;
+}
+.blog:last-child {
+	margin-right: 0;
+}
+.blog .thumb {
+	width: 400px;
+	height: 270px;
+	max-width: 100%;
+}
+.blog .thumb img {
+	object-fit: cover;
+}
+.content {
+	max-height: 220px;
+	padding: 0px 25px;
+
+	/* white-space: nowrap; */
+	overflow: hidden;
+	margin-bottom: 40px;
+	/* text-overflow: ellipsis; */
+}
+.blog h3 {
+	/* padding: 0 25px; */
+	/* margin-left: 8px; */
+	margin-top: 50px;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 28px;
+	color: var(--white-color);
+	font-family: "Quicksand";
+	margin-bottom: 5px;
+}
+
+.blog h1,
+.blog h2,
+.blog h4,
+.blog h5,
+.blog h6,
+.blog span,
+.blog p,
+.blog pre,
+.blog li {
+	color: var(--white-color);
+}
+
+.blog p {
+	/* padding: 0 25px; */
+
+	margin-top: 5px;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 24px;
+	color: var(--white-color);
+}
+.readmore {
+	/* margin-left: 33px; */
+	color: var(--sea-color) !important;
+	text-transform: uppercase;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 26px;
+	letter-spacing: 0.08em;
+	/* margin-top: 18px; */
+
+	position: absolute;
+	bottom: 16px;
+	left: 25px;
+}
+
+@media screen and (max-width: 763px) {
+	.blogslist {
+		margin-left: 0;
+		margin-right: 0;
+		width: calc(100% + 15px);
+		padding-right: 15px;
+	}
+	.blog {
+		width: 252px;
+		margin-right: 14px;
+		padding-bottom: 25px;
+	}
+	.blog .thumb {
+		height: 170px;
+	}
+	.blog h3 {
+		padding: 0 20px;
+	}
+
+	.blog p {
+		margin-top: 15px;
+		padding: 0 20px;
+		margin-bottom: 20px;
+	}
+	.readmore {
+		margin-left: 28px;
+	}
+}

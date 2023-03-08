@@ -1,0 +1,66 @@
+.whereweservicewrapper {
+	background: var(--offwhite-color);
+	padding: 75px 0 62px;
+}
+.services {
+	display: flex;
+	justify-content: space-between;
+	overflow: hidden;
+	margin: 0 30px;
+	overflow-x: auto;
+	margin-top: 20px;
+	flex-wrap: unset;
+	text-align: center;
+	white-space: nowrap;
+}
+@media screen and (max-width: 1399px) {
+	.services {
+		overflow-x: scroll;
+	}
+}
+.servicelist {
+	margin-right: 40px;
+	width: 280px;
+	flex: 0 0 auto;
+}
+.servicelist:last-child {
+	margin-right: 0;
+}
+.serviceitem {
+	border-bottom: 1px solid var(--border-color);
+	padding: 14px 20px;
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 5px;
+	transition: 0.3s all;
+	font-weight: 500;
+	font-size: 16px;
+	cursor: pointer;
+}
+.serviceitem::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	width: 4px;
+	height: 4px;
+	border-radius: 20px;
+	background: var(--limegreen-color);
+}
+.serviceitem svg {
+	width: 10px;
+	position: absolute;
+	color: var(--grey-color);
+	right: 0;
+}
+
+.serviceitem:hover {
+	color: var(--purple-color);
+}
+
+@media screen and (max-width: 763px) {
+	.services {
+		margin-left: 0;
+		margin-right: 0;
+	}
+}

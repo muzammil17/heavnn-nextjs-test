@@ -1,0 +1,74 @@
+.petservices {
+  background: var(--orange-color);
+  width: 1020px;
+  max-width: 100%;
+  padding: 30px 75px 20px 95px;
+  margin: 0 auto;
+  margin-top: -105px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.petservices h2 {
+  font-weight: 700;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: var(--white-color);
+  font-family: "Quicksand";
+}
+.formitem {
+  padding-top: 10px;
+}
+
+.formitem label {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: -0.02em;
+  color: var(--white-color);
+  margin-bottom: 6px;
+  display: block;
+}
+.formitem button {
+  height: 54px;
+  width: 100%;
+  margin-top: 22px;
+  border: 1px solid var(--white-color);
+  border-radius: 5px;
+  background: var(--white-color);
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--orange-color);
+  cursor: pointer;
+  transition: 0.3s all;
+}
+.formitem button:hover {
+  background: transparent;
+  color: var(--white-color);
+}
+
+@media screen and (max-width: 991px) {
+  .petservices {
+    margin-top: 0;
+    border-radius: 0 0 5px 5px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  .petservices h2 {
+    font-size: 32px;
+  }
+  .formitem button {
+    margin-top: 0;
+    width: calc(100% - 15px);
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .petservices {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

@@ -1,0 +1,131 @@
+.business {
+  padding: 73px 100px 85px 140px;
+  position: relative;
+}
+.content {
+  height: 100%;
+  width: 480px;
+  max-width: 100%;
+}
+.content h4 {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 26px;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--limegreen-color);
+  margin-bottom: 15px;
+}
+
+.content h2 {
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 44px;
+  font-family: "Quicksand";
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+
+.content p {
+  font-weight: 400;
+  font-size: 18px;
+  margin: 20px 0;
+  line-height: 26px;
+  color: var(--grey-color);
+}
+
+.content button {
+  border: none;
+  transition: 0.3s all;
+  width: 274px;
+  height: 54px;
+  border-radius: 5px;
+  background: var(--limegreen-color);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: var(--white-color);
+  text-align: center;
+  letter-spacing: 0.08em;
+  cursor: pointer;
+  text-transform: uppercase;
+  z-index: 99;
+}
+.content button:hover {
+  background: var(--green-color);
+}
+.thumbbox {
+  text-align: right;
+}
+.thumbbox img {
+  max-width: 100%;
+  height: auto !important;
+}
+.backtotop {
+  width: 70px;
+  height: 70px;
+  background: var(--purple-color);
+  border-radius: 5px;
+  position: absolute;
+  border: none;
+  bottom: 15px;
+  cursor: pointer;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5s all;
+}
+.backtotop:hover {
+  background: var(--darkpurple-color);
+}
+
+.backtotop svg {
+  color: var(--white-color);
+  width: 22px;
+}
+
+@media screen and (max-width: 1194px) {
+  .business {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 991px) {
+  .thumbbox {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  .content {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 763px) {
+  .business {
+    padding-bottom: 60px;
+  }
+  .thumbbox {
+    text-align: left;
+  }
+  .content {
+    text-align: left;
+  }
+  .content h2 {
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .content p {
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .content button {
+    width: 100%;
+    background: var(--purple-color) !important;
+  }
+  .backtotop {
+    display: none;
+  }
+}
